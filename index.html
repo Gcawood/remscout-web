@@ -68,28 +68,49 @@
         <div class="phone-frame">
           <div class="phone-screen">
             <div class="phone-mockup">
-              <div class="mockup-header">
-                <div class="mockup-location">📍 Gold River, CA</div>
-                <div class="mockup-filters">
-                  <span class="chip chip-orange">3bd+</span>
-                  <span class="chip">Under $900K</span>
-                  <span class="chip">Top Schools</span>
+              <!-- Status bar -->
+              <div class="mockup-statusbar">
+                <span class="mockup-statusbar-time">9:41</span>
+                <div class="mockup-statusbar-icons">
+                  <span>●●●</span>
+                  <span>WiFi</span>
+                  <span>🔋</span>
                 </div>
               </div>
+              <!-- Top bar -->
+              <div class="mockup-topbar">
+                <div class="mockup-area-pill">
+                  <div class="dot"></div>
+                  Gold River, CA
+                </div>
+                <div class="mockup-icon-btn">⚙</div>
+                <div class="mockup-icon-btn">☰</div>
+                <div class="mockup-icon-btn orange" style="position:relative">
+                  🚗
+                  <div class="mockup-badge">5</div>
+                </div>
+              </div>
+              <!-- Map -->
               <div class="mockup-map">
                 <div class="map-bg"></div>
-                <div class="map-pin pin-1">$875K</div>
-                <div class="map-pin pin-2 pin-active">$749K</div>
-                <div class="map-pin pin-3">$820K</div>
+                <div class="map-pin pin-1"><div class="pin-bubble">$495K</div><div class="pin-tail"></div></div>
+                <div class="map-pin pin-2"><div class="pin-bubble active">$685K</div><div class="pin-tail active"></div></div>
+                <div class="map-pin pin-3"><div class="pin-bubble">$799K</div><div class="pin-tail"></div></div>
+                <div class="map-pin pin-4"><div class="pin-bubble">$549K</div><div class="pin-tail"></div></div>
                 <div class="map-route"></div>
+                <div class="mockup-search-btn">🔍 Search this area</div>
               </div>
+              <!-- Listing card -->
               <div class="mockup-card">
-                <div class="card-address">142 Riverview Dr</div>
-                <div class="card-price">$749,000</div>
-                <div class="card-details">4 bd · 2.5 ba · 2,340 sqft</div>
+                <div class="card-row1">
+                  <div class="card-address">11440 Sutters Mill Cir</div>
+                  <div class="card-match">87% match</div>
+                </div>
+                <div class="card-price">$685,000</div>
+                <div class="card-details">2 bd · 2 ba · 1,441 sqft · 3 days on market</div>
                 <div class="card-actions">
                   <button class="card-btn card-btn-primary">Add to Tour</button>
-                  <button class="card-btn card-btn-ghost">Save</button>
+                  <button class="card-btn card-btn-ghost">♡ Save</button>
                 </div>
               </div>
             </div>
@@ -149,7 +170,12 @@
             <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
           </div>
           <h3>Tour Planner</h3>
-          <p>Pick your time window — 30 min to 3 hours. REMScout builds an optimized stop list and estimated drive time.</p>
+          <p>Pick your time window — 30 min to 3 hours. REMScout ranks stops by match score or optimizes for the shortest route.</p>
+          <div class="sort-badge">
+            <span class="active">★ Best Match</span>
+            <span class="sort-divider">|</span>
+            <span>↻ Best Route</span>
+          </div>
         </div>
 
         <div class="feature-card">
