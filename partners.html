@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REMScout — For Partner Agents</title>
+  <meta name="description" content="Partner with REMScout: warm, ready-to-tour buyers in your market — not auctioned cold leads." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       SET YOUR DOCSEND LINK HERE
+       Upload the partner-agent plan to DocSend, enable email
+       capture + NDA, copy the share link, and paste it below.
+       ========================================================= -->
+  <script>
+    window.REMSCOUT_DOCSEND_PARTNER_URL = "PASTE_DOCSEND_PARTNER_LINK_HERE";
+  </script>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/img/monkey-mark.png" alt="" class="nav-monkey" onerror="this.replaceWith(document.createTextNode('🐒'))">
+        <span class="logo-rem">REM</span><span class="logo-scout">Scout</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/investors">Investors</a>
+      </div>
+      <a href="#access" class="btn btn-nav">Become a partner</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">🤝 For licensed agents</div>
+        <h1 class="hero-headline">
+          Warm buyers in your market.<br />
+          <span class="highlight">Not auctioned leads.</span>
+        </h1>
+        <p class="hero-sub">
+          REMScout helps buyers discover the right neighborhood and tour it — then hands the engaged ones to you, with their budget, must-haves, and favorite homes already attached. One partner agent per market. Your brand. Your patch.
+        </p>
+        <div class="hero-cta">
+          <a href="#access" class="btn btn-orange btn-lg">See the partnership</a>
+        </div>
+        <p class="hero-note">Limited to one (or a few) agents per market — by design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEASER -->
+  <section class="features">
+    <div class="container">
+      <div class="section-label">Why partner</div>
+      <h2 class="section-title">You're the trusted local expert — not the highest bidder</h2>
+      <p class="section-sub">We don't auction you against four other agents. We introduce you to buyers who've already shown us what they want.</p>
+      <div class="features-grid">
+        <div class="feature-card feature-card-large">
+          <h3>Preference-tagged referrals</h3>
+          <p>By the time a buyer reaches you, they've flown through real listings, saved favorites, built a tour, and asked the in-app guide questions. You get a warm intro with the context — not a cold name and email.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Your brand in-app</h3>
+          <p>You're the agent buyers in your market see and meet. One partner per market keeps it that way.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Simple hybrid pricing</h3>
+          <p>A low monthly to be your market's partner, plus a referral fee only on deals we source and you close. No close, no fee.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Your license, working for you</h3>
+          <p>Your MLS access powers real listings &amp; photos in the app — and routes those buyers to you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS / CTA -->
+  <section class="download" id="access">
+    <div class="container">
+      <div class="download-inner">
+        <div class="download-monkey">
+          <img src="/img/monkey-mark.png" alt="REMScout" class="download-monkey-img" onerror="this.outerHTML='<span style=&quot;font-size:72px&quot;>🐒</span>'">
+        </div>
+        <h2>See the full partnership details</h2>
+        <p>How it works, pricing, exclusivity, and how to claim your market. You'll enter your email and accept an NDA.</p>
+        <a href="#" id="partnerCta" class="btn btn-orange btn-lg app-store-btn">View the partner plan →</a>
+        <p class="download-note">Powered by DocSend · email &amp; NDA required</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="/img/monkey-mark.png" alt="" class="footer-monkey" onerror="this.style.display='none'">
+        <span class="logo-rem">REM</span><span class="logo-scout">Scout</span>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/investors">Investors</a>
+        <a href="mailto:hello@remscout.com">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 REMScout. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var url = window.REMSCOUT_DOCSEND_PARTNER_URL || "";
+      var cta = document.getElementById('partnerCta');
+      var configured = url && url.indexOf('PASTE_') !== 0;
+      if (configured) {
+        cta.setAttribute('href', url);
+        cta.setAttribute('target', '_blank');
+        cta.setAttribute('rel', 'noopener');
+      } else {
+        cta.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.location.href = 'mailto:hello@remscout.com?subject=REMScout%20partner%20agent%20inquiry';
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

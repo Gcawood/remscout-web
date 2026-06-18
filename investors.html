@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REMScout — For Investors</title>
+  <meta name="description" content="REMScout: an agent-partnership home-buying discovery network. Request the investor materials." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       SET YOUR DOCSEND LINK HERE
+       Upload the investor plan/deck to DocSend, enable email
+       capture + NDA, copy the share link, and paste it below.
+       ========================================================= -->
+  <script>
+    window.REMSCOUT_DOCSEND_INVESTOR_URL = "PASTE_DOCSEND_INVESTOR_LINK_HERE";
+  </script>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/img/monkey-mark.png" alt="" class="nav-monkey" onerror="this.replaceWith(document.createTextNode('🐒'))">
+        <span class="logo-rem">REM</span><span class="logo-scout">Scout</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/partners">For Agents</a>
+      </div>
+      <a href="#access" class="btn btn-nav">Request access</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">📈 Investor materials</div>
+        <h1 class="hero-headline">
+          The agent-partnership<br />
+          <span class="highlight">home-buying network.</span>
+        </h1>
+        <p class="hero-sub">
+          REMScout is a consumer home-discovery app on the front and a vetted local-agent referral network underneath. One partner agent per market unlocks real MLS data, distribution, and trust — all at once.
+        </p>
+        <div class="hero-cta">
+          <a href="#access" class="btn btn-orange btn-lg">Request the investor plan</a>
+        </div>
+        <p class="hero-note">Email &amp; NDA required · secure access via DocSend</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEASER -->
+  <section class="features">
+    <div class="container">
+      <div class="section-label">The thesis</div>
+      <h2 class="section-title">Why the agent is the keystone</h2>
+      <p class="section-sub">The licensed local agent is the single relationship that unlocks everything else — and it's the same person a serious buyer ultimately needs.</p>
+      <div class="features-grid">
+        <div class="feature-card feature-card-large">
+          <h3>One relationship, three unlocks</h3>
+          <p>A partner agent's license authorizes the real MLS feed (data + photos), funnels their sphere into the app (distribution), and lends local credibility the AI guide rides on (trust). Most proptech disintermediates agents; we make them the keystone.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Capital-light expansion</h3>
+          <p>A market = one MLS (~$199/mo) + one partner agent. A single closed referral can fund that market for a year-plus.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Warm, not auctioned</h3>
+          <p>We hand buyers to one trusted agent with their revealed preferences — a trust position lead-auction portals structurally can't take.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Built &amp; shipping</h3>
+          <p>iOS app on TestFlight, real-data architecture, AI guide, virtual flyby. Site live. The agent portal is the next build.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESS / CTA -->
+  <section class="download" id="access">
+    <div class="container">
+      <div class="download-inner">
+        <div class="download-monkey">
+          <img src="/img/monkey-mark.png" alt="REMScout" class="download-monkey-img" onerror="this.outerHTML='<span style=&quot;font-size:72px&quot;>🐒</span>'">
+        </div>
+        <h2>Request the full investor plan</h2>
+        <p>Market sizing, unit economics, GTM, and the deck. Access is gated — you'll enter your email and accept an NDA.</p>
+        <a href="#" id="investorCta" class="btn btn-orange btn-lg app-store-btn">View the investor plan →</a>
+        <p class="download-note">Powered by DocSend · email &amp; NDA required</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="/img/monkey-mark.png" alt="" class="footer-monkey" onerror="this.style.display='none'">
+        <span class="logo-rem">REM</span><span class="logo-scout">Scout</span>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/partners">For Agents</a>
+        <a href="mailto:hello@remscout.com">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 REMScout. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var url = window.REMSCOUT_DOCSEND_INVESTOR_URL || "";
+      var cta = document.getElementById('investorCta');
+      var configured = url && url.indexOf('PASTE_') !== 0;
+      if (configured) {
+        cta.setAttribute('href', url);
+        cta.setAttribute('target', '_blank');
+        cta.setAttribute('rel', 'noopener');
+      } else {
+        cta.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.location.href = 'mailto:hello@remscout.com?subject=Investor%20materials%20request';
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
